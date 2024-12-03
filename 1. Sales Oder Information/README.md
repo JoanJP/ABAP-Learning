@@ -6,6 +6,7 @@ The customer requires a program to display sales order details. The user will in
 - Sales Document: `VBAK-VBELN`
 - Material Number: `VBAP-MATNR`
 
+# Report Requirements
 The final table should show:
 - Sales Document Number: `VBAP-VBELN`
 - Item Number: `VBAP-POSNR`
@@ -25,7 +26,7 @@ The final table should show:
   - Sales Document as a range with default value "20000002".
   - Material Number as a range.
   - Sales Order Type and Distribution Channel can hold multiple value input but not in range.
-  
+
 **Check the existence** of the sales document in the `VBAK` table and provide an error message if not found.
 
 **Check Sales document input field** cannot be empty using the AT SELECTION SCREEN event.
