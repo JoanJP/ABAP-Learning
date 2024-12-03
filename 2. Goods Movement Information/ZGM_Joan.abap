@@ -228,7 +228,7 @@ ENDFORM.
 
 
 FORM FRM_SET_PF_STATUS USING PV_EXCL_TAB TYPE KKBLO_T_EXTAB.
-  SET TITLEBAR 'TITLE' WITH 'Goods Movement' 'Report' 'for 47829:' 'Joan Jalu Pangestu'.
+  SET TITLEBAR 'TITLE' WITH 'Goods Movement' 'Report' 'for :' 'Joan Jalu Pangestu'.
   SET PF-STATUS 'STANDARD_FULLSCREEN'.
 ENDFORM.
 
