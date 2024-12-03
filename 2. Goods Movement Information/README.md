@@ -25,18 +25,18 @@ The report should display:
 # Objectives:
 **Create a Custom Table** in DDIC 
   - Fields in the table is same as on the ALV display without the `ICON`.
-  - Create your own data element and domain for your Ztable
+  - Create your own data element and domain for your Ztable.
   - Add a transparent table with a primary key on `WERKS`.
   - Generate table maintenance for this table (SM30).
 
 **Selection Screen Setup** 
   * Input fields:
-    - Posting Date MKPF-BUDAT required, in range set default from 2020/01/01 to today's date
-    - Plant: MSEG-WERKS required, set default '1710'
-    - Storage Location :MSEG-LGORTin range
-    - Material Number: MSEG-MATNRin range.
+    - Posting Date `MKPF-BUDAT` required, in range set default from 2020/01/01 to today's date
+    - Plant: `MSEG-WERKS` required, set default '1710'.
+    - Storage Location: `MSEG-LGORT` in range.
+    - Material Number: `MSEG-MATNR` in range.
   * Existence Check 
-    - Validate that the plant exists in table T001W. Provide a proper error message if not found.
+    - Validate that the plant exists in table `T001W`. Provide a proper error message if not found.
 
 **Data Retrieval and Manipulation** 
   * Retrieve data from `MKPF` and `MSEG` tables based on the selection screen inputs.
@@ -97,5 +97,5 @@ Code Standards:
 - Implement user commands (USER_COMMAND) for toolbar buttons.
 - Use event DOUBLE_CLICK for the secondary ALV grid.
 Performance Considerations:
-- Select only required fields from tables (SELECT <fields>).
+- Select only required fields from tables (Don't SELECT * ).
 - Use field symbols or work areas for efficient data processing.
